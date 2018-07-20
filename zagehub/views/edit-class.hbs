@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Class</title>
+  </head>
+  <body>
+    <h1>Edit class</h1>
+    <form action="/addclass/edit/{{userClass._id}}?_method=PATCH" method="post">
+      <p>
+        <input type="text" name="className" placeholder="Class name" value={{userClass.className}}>
+      </p>
+      <p>
+        <input type="number" name="presentGrade" placeholder="Grade now" value={{userClass.presentGrade}}>
+      </p>
+      <p>
+        <input type="number" name="wantedGrade" placeholder="Grade you want" value={{userClass.wantedGrade}}>
+      </p>
+      <p>
+        <input type="number" name="percentTest" placeholder="Percent test is worth" value={{userClass.percentTest}}>
+      </p>
+      <input type="submit" value="Update Class">
+    </form>
+    <a href="/home">Back to Home</a>
+  </body>
+</html>

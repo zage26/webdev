@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Sacramento" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Your Classes</h1>
+    <!-- <p>Email: {{userEmail}}</p> -->
+    {{#each classes}}
+    <section style="border: solid">
+      <p><b>{{className}}</b></p>
+      <p>Present Grade: {{presentGrade}}</p>
+      <p>Grade Wanted: {{wantedGrade}}</p>
+      <p>Grade Needed: {{neededGrade}}</p>
+      <form action="/addclass/{{_id}}?_method=DELETE" method="post">
+        <input type="submit" name="" value="Delete">
+      </form>
+      <a href="/addclass/edit/{{_id}}">Edit</a>
+    </section>
+    {{/each}}
+    <a href="/addclass">Add Class</a>
+    <form action="/logout" method="post">
+      <input type="submit" name="Logout" value="logout">
+    </form>
+  </body>
+</html>

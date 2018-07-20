@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Community Calendar Login</title>
+    <link rel="stylesheet" type="text/css" href="./master.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Open+Sans+Condensed:300|Playfair+Display+SC" rel="stylesheet">
+  </head>
+  <body>
+    <section id="container">
+      <div id="sign-in">
+        <div id="title">
+          <p>Community Calendar</p>
+        </div>
+        <div id="login">
+          <form id="login-form" action="/" method="post">
+            <label for="username">Username</label><br>
+            <input type="text" name="username" value=""><br><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" value=""><br><br>
+            <!-- <input id="login-button" type="submit" name="login" value="Login"> -->
+            <button type="submit" id="login-button">Sign in</button>
+          </form>
+          <p>your username is: {{username}}</p>
+        </div>
+        <div id="sign-up">
+          <p>Don't have an account? <span>Sign-up</span></p>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="modal">
+      <div id="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-header">
+          <p>Sign-Up</p>
+        </div>
+        <div id="modal-middle">
+          <form id="sign-up-form" action="/sign-up" method="post">
+            <label for="username">Username</label><br>
+            <input type="text" name="username" value=""><br><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" value=""><br><br>
+            <label for="password">Verify Password</label><br>
+            <input type="password" name="password" value=""><br><br>
+            <!<input id="login-button" type="submit" name="login" value="Login"> -->
+            <!-- <button type="submit" id="login-button">Sign up</button>
+          </form>
+        </div>
+        <div id="modal-footer">
+          <p>*By signing up, you are agreeing to the Community Calendar <span>Code of Conduct</span>*</p>
+        </div>
+      </div> -->
+    <!-- </section> -->
+    <!-- <form class="" action="/" method="post">
+      <label for="name">Name</label>
+      <input type="text" name="name" value="">
+      <label for="yn">Yes or no?</label>
+      <input type="radio" name="yn" value="yes">Yes
+      <input type="radio" name="yn" value="no">No
+      <input type="submit" name="button">
+    </form> -->
+    <!-- <div class="">
+      <p>You wrote:{{name}}</p>
+      <p>Y or N: {{yn}}</p>
+    </div> -->
+    <!-- <link rel="stylesheet" href="/master.css"> -->
+  </body>
+</html>

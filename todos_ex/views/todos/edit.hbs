@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test Form</title>
+  </head>
+  <body>
+    <h1>EDIT A TODO</h1>
+    <!-- action: which route you want it to send it too, send it to the post route -->
+    <!-- method: do want it to get or post (for everything else)  -->
+    <form action="/todos/{{id}}" method="post">
+      <!-- for label should match to id of the input labeled -->
+      <label for="todoText">Text: </label>
+      <!-- name: tell what the body grabs it as ex) req.body.(name) -->
+      <input id="todoText" type="text" name="todoText" value="">
+      <label>Completed: </label>
+      <label for="todoCompleted">True</label>
+      <input type="radio" name="todoCompleted" value="true">
+      <label for="todoCompleted">False</label>
+      <input type="radio" name="todoCompleted" value="true">
+      <input type="submit" name="" value="Create">
+    </form>
+  </body>
+</html>

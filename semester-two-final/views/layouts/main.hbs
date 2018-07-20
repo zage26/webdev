@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Main</title>
+  </head>
+  <body>
+    {{#each errorMessages}}
+      <p>{{message}}</p>
+    {{/each}}
+    {{#each successMessage}}
+      <p>{{message}}</p>
+    {{/each}}
+    {{{body}}}
+  </body>
+</html>

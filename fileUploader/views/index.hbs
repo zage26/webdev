@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>File Uploader</title>
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+    <h1>Upload a File</h1>
+    <!-- SENDING A FILE (use enctype) -->
+    <form action="/" method="post" enctype="multipart/form-data">
+      <p>
+        <!-- save name to databse and then pull out image based on name -->
+        <input type="text" name="title" placeholder="Image title">
+      </p>
+      <p>
+        <input type="file" name="uploadedFile">
+      </p>
+      <p>
+        <input type="submit">
+      </p>
+    </form>
+    <!-- relative from public folder -->
+    <img src="/images/12afe71441089d1bb02fd8a3bd081336" alt="">
+  </body>
+</html>

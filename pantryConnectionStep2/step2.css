@@ -1,0 +1,89 @@
+body {
+	margin: 0px;
+	border: 0px;
+}
+
+img {
+	width: 100%;
+}
+
+#pantry-title {
+	text-align: center;
+/*	border: solid;*/
+	font-size: 50px;
+	padding: 0px;
+	font-family: 'Abril Fatface', cursive;
+/*	background-color: #F2F2F2;*/
+}
+
+#form {
+/*	border: solid;*/
+/*	height: 400px;*/
+	display: grid;
+	grid-template-rows: 50% 40% 10%;
+/*	background-color: #F2F2F2;*/
+}
+
+div {
+/*	border: solid;*/
+}
+
+#wishlist {
+/*	height: 100%;*/
+	display: grid;
+	grid-template-rows: 25% 75%;
+	margin: 0px 0px 50px 0px;
+}
+
+#wishlist-title, #hours-title {
+	text-align: center;
+	font-size: 40px;
+	margin: 50px 0px 25px 0px;
+/*	margin: */
+	font-family: 'Sacramento', cursive;
+}
+
+#items {
+/*	border: solid;*/
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 0% 20% 0% 20%;
+}
+
+#gen-commodities, #needed {
+	display: grid;
+	grid-template-rows: 10% 90%;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+/*	border: solid;*/
+}
+
+#commodities-title, #needed-title {
+	/*background-color: blue;*/
+/*	text-align: center;*/
+}
+
+#container {
+/*	border: solid;*/
+}
+
+#submit-button {
+	height: 70px;
+	border: none;
+	background-color: #F2F2F2;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://i.ytimg.com/vi/ReF6iQ7M5_A/maxresdefault.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

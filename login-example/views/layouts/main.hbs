@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Testing</title>
+  </head>
+  <body>
+    {{#each errorMessages}}
+      <p>{{message}}</p>
+    {{/each}}
+    {{#each successMessage}}
+      <p>{{message}}</p>
+    {{/each}}
+    <!-- <h1>Main Layout</h1> -->
+    <!-- always render the layout, and then the route in 'body' -->
+    {{{body}}}
+    <!-- <footer>My footer</footer> -->
+  </body>
+</html>
